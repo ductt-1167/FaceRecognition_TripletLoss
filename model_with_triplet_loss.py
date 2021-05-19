@@ -79,8 +79,7 @@ def train_model_with_session():
 
     # Setup Optimizer
     learning_rate = 0.0001
-    momentum = 0.9    # giống như cấp cho 1 vận tốc ban đầu, thường là 0.9, giải quyết được vấn đề dừng wor local
-                        # minium mà k tới global minium
+    momentum = 0.9
     batch_size = 64
     train_iter = 200
     step = 50

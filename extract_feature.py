@@ -69,7 +69,7 @@ def get_features(images):
         input_test = np.array(face_fix_size)
 
         inputs.append(input_test)
-        # vectors.append(model.predict(input_test))
+
     inputs = np.array(inputs).reshape(-1, img_rows, img_cols, 3)
 
     model = build_network(input_shape, embedding_size)

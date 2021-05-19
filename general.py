@@ -16,6 +16,6 @@ user_information = 'data/data_information.csv'
 feature_data = 'data/feature_data.csv'
 
 # general variable
-img_row = img_col = 160 #120    # size image input for 0905
+img_row = img_col = 160     # size image input for model triplet
 embedding_size = 128    # size feature output
 

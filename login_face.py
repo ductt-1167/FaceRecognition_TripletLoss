@@ -103,9 +103,6 @@ else:
     max_predict = max(predict)
     print("Welcome ", list_name_information[list_id_information.tolist().index(id_predict[predict.index(max_predict)])],
           'with ', max_predict*100, ' %')
-    # for i in range(len(id_predict)):
-    #     index = list_id_information.tolist().index(id_predict[i])
-    #     print(list_name_information[index], 'with ', predict[i]*100, ' %')
 
 # remove folder cache
 shutil.rmtree(folder_cache)

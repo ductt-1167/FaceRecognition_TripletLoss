@@ -74,7 +74,7 @@ for image_path in image_paths:
     input_test = np.array(face_fix_size)
 
     inputs.append(input_test)
-    # vectors.append(model.predict(input_test))
+
 inputs = np.array(inputs).reshape(-1, img_row, img_col, 3)
 
 model = build_network(input_shape, embedding_size)
@@ -98,13 +98,14 @@ path_test = '../data/data_test_training/me'
 image_paths = [os.path.join(path_test, f) for f in os.listdir(path_test)]
 for image_path in image_paths:
     face_image = Image.open(image_path)
+
     # resize the image
     face_numpy = np.array(face_image, 'uint8')
     face_fix_size = cv2.resize(face_numpy, fix_size_img)
     input_test = np.array(face_fix_size)
 
     inputs.append(input_test)
-    # vectors.append(model.predict(input_test))
+
 inputs = np.array(inputs).reshape(-1, img_row, img_col, 3)
 outputs = model.predict(inputs)
 sum_vec = outputs[0]
