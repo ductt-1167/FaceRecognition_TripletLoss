@@ -9,14 +9,7 @@ but we not choose all, we filter it and save in folder data/data_training.
 3. Setup interpreter: Goto Pycharm --> File --> Settings --> Project:TripletColorImage --> Python interpreter --> Add
     --> Virtualenv environment --> new environment --> Ok 
     
-4. Install needed packages: choose Terminal in bottom menu
-- numpy package: pip install numpy 
-- pillow package: pip install pillow
-- pandas package: pip install pandas 
-- csv package: pip install csv 
-- opencv package: pip install opencv-python 
-- sklearn package: pip install sklearn 
-- tensorflow package: pip install tensorflow 
+4. Install needed packages: I list packages which used in project in setup.txt. Doing run :  pip install -r setup.txt in terminal 
 
 # Run project
 ## - For training model 
