@@ -1,7 +1,6 @@
 numpy
 pillow
 pandas
-python-csv
 opencv-python
 sklearn
 tensorflow
